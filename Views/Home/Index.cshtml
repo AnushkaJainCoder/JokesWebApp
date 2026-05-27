@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="hero-section">
+    <span class="hero-emoji">🎭</span>
+    <h1 class="display-4">Welcome to JokesWebApp</h1>
+    <p class="lead">Create, browse, and search your favorite jokes — all in one place.</p>
+    <a class="btn btn-primary btn-lg" asp-controller="Jokes" asp-action="Index">Browse Jokes</a>
+</section>
+
+<div class="feature-grid">
+    <div class="feature-card">
+        <div class="feature-icon">📝</div>
+        <h3>Add Jokes</h3>
+        <p>Share your funniest questions and punchlines with the community.</p>
+        <a class="btn btn-outline-primary btn-sm" asp-controller="Jokes" asp-action="Create">Create New</a>
+    </div>
+    <div class="feature-card">
+        <div class="feature-icon">📋</div>
+        <h3>View All</h3>
+        <p>See every joke in your collection at a glance.</p>
+        <a class="btn btn-outline-primary btn-sm" asp-controller="Jokes" asp-action="Index">View List</a>
+    </div>
+    <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>Search</h3>
+        <p>Find jokes quickly by keyword or phrase.</p>
+        <a class="btn btn-outline-primary btn-sm" asp-controller="Jokes" asp-action="ShowSearchForm">Search Jokes</a>
+    </div>
+</div>

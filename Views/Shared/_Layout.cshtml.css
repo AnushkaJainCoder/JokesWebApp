@@ -1,0 +1,44 @@
+a.navbar-brand {
+  white-space: normal;
+  word-break: break-word;
+}
+
+a {
+  color: var(--joke-primary, #e85d04);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--joke-primary, #e85d04);
+  border-color: var(--joke-primary-dark, #c44d03);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: var(--joke-primary, #e85d04);
+  border-color: var(--joke-primary-dark, #c44d03);
+}
+
+.border-top {
+  border-top: 1px solid var(--joke-border, #f0e6dc);
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--joke-border, #f0e6dc);
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

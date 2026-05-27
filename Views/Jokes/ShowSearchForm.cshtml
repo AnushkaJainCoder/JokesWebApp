@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Search Jokes";
+}
+
+<div class="page-header">
+    <h1 class="page-title">Search Jokes</h1>
+    <p class="page-subtitle">Find jokes by keyword in the question or answer.</p>
+</div>
+
+<div class="content-card search-card">
+    <h4>Search</h4>
+    <hr />
+    <form asp-action="ShowSearchResults">
+        <div class="form-group">
+            <label for="SearchPhrase" class="control-label">Search phrase</label>
+            <input name="SearchPhrase" class="form-control" placeholder="Enter a word or phrase..." />
+        </div>
+        <div class="form-group mb-0">
+            <input type="submit" value="Search" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+<a asp-action="Index" class="back-link">← Back to List</a>
